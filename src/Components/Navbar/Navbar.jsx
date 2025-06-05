@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BsTelephone } from "react-icons/bs";
 import { FiMail, FiSun } from "react-icons/fi";
 import { LuMoon } from "react-icons/lu";
@@ -8,9 +8,14 @@ import { CiInstagram } from 'react-icons/ci';
 import { IoLogoGithub } from 'react-icons/io5';
 import Conteiner from '../Conteiner/Conteiner';
 import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import AboutMe from '../AboutMe/AboutMe';
 
 
 const Navbar = () => {
+  AOS.init();
+  const [isClose, setIsClose] = useState(false);
   return (
     <section className='bg-dark flex flex-col justify-between h-screen'>
       <div className='z-[999]'>
@@ -56,10 +61,13 @@ const Navbar = () => {
             <div className='relative'>
               <h1 className='text-white text-4xl md:text-[64px] font-primary font-bold mr-12'>Nayeb Islam Nafi</h1>
               <p className='font-secondary italic text-white mt-3 mb-4 md:mt-5 md:mb-8'>Front End Developer</p>
-              <button className='font-button font-extrabold text-white bg-[#4595eb] py-[10px] px-5 rounded-sm bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group cursor-pointer'>
-                About Me
-                <HiArrowLongRight size={40} className='absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-7.5 ease-in-out duration-100' />
-              </button>
+              <div>
+                <button onClick={() => setIsClose(true)} className='font-button font-extrabold text-white bg-[#4595eb] py-[10px] px-5 rounded-sm bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group cursor-pointer'>
+                  About Me
+                  <HiArrowLongRight size={40} className='absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-7.5 ease-in-out duration-100' />
+                </button>
+                <AboutMe isClose={isClose} setIsClose={setIsClose} />
+              </div>
             </div>
           </div>
         </Conteiner>
