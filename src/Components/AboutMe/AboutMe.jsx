@@ -36,7 +36,7 @@ const AboutMe = ({ isClose, setIsClose }) => {
                         <div>
                             <div className='w-[70%] mx-auto mt-12'>
                                 <h2 className='text-[#1788ae] text-2xl font-bold font-button mb-5'>ABOUT ME</h2>
-                                <p className='max-w-[390px] font-button text-white my-4'>
+                                <p className='max-w-[390px] font-button text-justify text-white my-4'>
                                     I’m Nayeb Gazi and I am self taught front-end developer from Bangladesh. Programming and web development is my passion and I believe in helping people with my abilities and knowledge. I am learning and working at my home last 1 years and it feels like a part of my life. Proficient in HTML5, CSS3, JavaScript, and modern frameworks like React.js. Passionate about staying updated with the latest industry trends and continuously enhancing technical skills.
                                 </p>
                                 <ul className='flex flex-wrap font-button text-white my-3.5'>
