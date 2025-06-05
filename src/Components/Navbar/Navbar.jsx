@@ -18,7 +18,7 @@ const Navbar = () => {
   const [isClose, setIsClose] = useState(false);
   return (
     <section className='bg-dark flex flex-col justify-between h-screen'>
-      <div className='z-[999]'>
+      <div className='z-[9]'>
         <Conteiner>
           <div className='flex items-center px-4 pt-4 justify-between'>
             <svg
@@ -32,10 +32,10 @@ const Navbar = () => {
               <path d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109" stroke="white" stroke-width="10" />
             </svg>
             <div className='text-white flex gap-4'>
-              <FiSun className='w-[24px] h-[24px]' />
-              <LuMoon className='w-[24px] h-[24px] hidden' />
-              <BsTelephone className='w-[24px] h-[24px]' />
-              <BsWhatsapp className='w-[24px] h-[24px]' />
+              <FiSun className='w-[24px] h-[24px] cursor-pointer' />
+              <LuMoon className='w-[24px] h-[24px] hidden cursor-pointer' />
+              <BsTelephone className='w-[24px] h-[24px] cursor-pointer' />
+              <BsWhatsapp className='w-[24px] h-[24px] cursor-pointer' />
             </div>
           </div>
         </Conteiner>
