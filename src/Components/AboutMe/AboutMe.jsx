@@ -5,10 +5,13 @@ import { RiBootstrapLine } from "react-icons/ri";
 import { TbBrandTailwind } from "react-icons/tb";
 import coder from "../../assets/coder.svg";
 import { createPortal } from "react-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import 'animate.css';
 
 
 const AboutMe = ({ isClose, setIsClose }) => {
+    AOS.init();
     return (
         createPortal(
             <section onClick={() => setIsClose(false)} className={`${isClose ? '' : 'hidden'} w-[100vw] h-[100vh] top-0 left-0 right-0 bottom-0 fixed bg-[#111111b3] z-100`}>

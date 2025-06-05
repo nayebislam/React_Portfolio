@@ -4,10 +4,10 @@ import { FiMail, FiSun } from "react-icons/fi";
 import { LuMail, LuMoon } from "react-icons/lu";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa6';
-import { IoLogoGithub } from 'react-icons/io5';
 import Conteiner from '../Conteiner/Conteiner';
 import { GrInstagram } from "react-icons/gr";
 import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
+import { SiGithub } from "react-icons/si";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import AboutMe from '../AboutMe/AboutMe';
@@ -85,7 +85,7 @@ const Navbar = () => {
             <a href="#"><LuMail size={35} className='text-[#b0b2c3] hover:text-white' /></a>
           </li>
           <li>
-            <a href="#"><IoLogoGithub size={35} className='text-[#b0b2c3] hover:text-white' /></a>
+            <a href="#"><SiGithub size={35} className='text-[#b0b2c3] hover:text-white' /></a>
           </li>
         </ul>
       </div>
