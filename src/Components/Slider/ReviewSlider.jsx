@@ -1,41 +1,126 @@
 import React from 'react'
 import Conteiner from '../Conteiner/Conteiner'
 import "slick-carousel/slick/slick.css";
+// import laptop from "../../assets/Innovate.png";
 import Slider from "react-slick";
-import { MdKeyboardArrowLeft } from "react-icons/md";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import "slick-carousel/slick/slick-theme.css";
+import Sohan from "../../assets/Sohan.jpg";
+import Mridul from "../../assets/Mridul.jpg";
+import Rafsan from "../../assets/Rafsan.jpg";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
+import '../Slider/ReviewSlider.css'
 
 const ReviewSlider = () => {
     var settings = {
-        dots: false,
+        dots: true,
         infinite: true,
         arrows: true,
-        prevArrow: <MdKeyboardArrowLeft />,
-        nextArrow: <MdKeyboardArrowRight />,
+        prevArrow: <SlArrowLeft />,
+        nextArrow: <SlArrowRight />,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
     };
     return (
-        <section className='bg-dark'>
+        <section className='bg-dark pb-12'>
             <Conteiner>
                 <h2
                     class="font-button text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md"
                 >
                     What my clients are saying?
                 </h2>
-                <div className='w-full max-w-[687px]'>
+                <div className='w-full rounded-lg md:max-w-[800px] mx-auto mt-12 shadow-[0_0px_60px_rgba(59,130,246,0.6)] items-center'>
                     <Slider {...settings}>
-                        <div className='relative mt-[107px]'>
-                            <div className='absolute top-[-80px] left-[48px] w-[124px] h-[124px] rounded-full bg-[#C4C4C4] z-10 border-[10px] border-[#F7F7FC]'></div>
-                            <div className='py-[45px] xl:py-[57px] px-[50px] xl:px-[60px] bg-white rounded-[20px] relative xl:shadow-[10px_10px_4px_-2px_rgba(0,0,0,0.25)]'>
-                                {/* <img className='absolute left-[48px] top-[-96px]' src={aboutimage1} alt="" /> */}
-                                <p className='max-w-[567px] font-secondary text-[18px] leading-[29px] xl:text-[22px] xl:leading-[44px] text-peraColor'>“Wow. Amazing company amazing Expert Manager. They know how to get things done when it comes to online trading.</p>
-                                <div className='flex justify-between items-end mt-5 xl:mt-[37px]'>
-                                    <div>
-                                        <h1 className='font-primary font-bold text-[18px] xl:text-[24px] xl:leading-[36px] text-[#30344E]'>Robert Fox</h1>
-                                        <p className='font-secondary text-[16px] leading-[26px] text-[#30344E] mt-[5px] xl:mt-[4px]'>Digital Marketer</p>
-                                    </div>
+                        <div>
+                            <div
+                                className="flex flex-col md:flex-row justify-between items-center rounded-lg p-7 md:p-9 cursor-grab"
+                            >
+                                <img
+                                    className="hover:scale-110 ease-in-out duration-200 shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full "
+                                    src={Sohan}
+                                    alt="testimonial 3"
+                                />
+                                <div
+                                    className=" text-left pt-6 md:pt-16"
+                                >
+                                    <p className="max-w-[485px] text-sm md:text-base my-3.5 md:my-[18px] text-white font-button">
+                                        “Nayeb is a talented, committed individual who will leave no
+                                        stone unturned in his pursuit to provide with the best. His
+                                        attention to detail and in-depth experience in the of web
+                                        development is indeed commendable. He has exhibited exemplary
+                                        skills in the field, and I hope to see all the great projects
+                                        coming up!”
+                                    </p>
+                                    <h2
+                                        className="text-right text-[#459bd5] font-bold text-2xl md:text-4xl font-button"
+                                    >
+                                        Mahidul Islam Sohan
+                                    </h2>
+                                    <h5 className="text-right text-[#459bd5] text-base md:text-lg font-button mt-[3px]">
+                                        Founder, Innovate
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                className="flex flex-col md:flex-row justify-between items-center rounded-lg p-7 md:p-9 cursor-grab"
+                            >
+                                <img
+                                    className="hover:scale-110 ease-in-out duration-200 shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full "
+                                    src={Mridul}
+                                    alt="testimonial 3"
+                                />
+                                <div
+                                    className=" text-left pt-6 md:pt-16"
+                                >
+                                    <p className="max-w-[485px] text-sm md:text-base my-3.5 md:my-[18px] text-white font-button">
+                                        “Nayeb is a talented, committed individual who will leave no
+                                        stone unturned in his pursuit to provide with the best. His
+                                        attention to detail and in-depth experience in the of web
+                                        development is indeed commendable. He has exhibited exemplary
+                                        skills in the field, and I hope to see all the great projects
+                                        coming up!”
+                                    </p>
+                                    <h2
+                                        className="text-right text-[#459bd5] font-bold text-2xl md:text-4xl font-button"
+                                    >
+                                        Mridul Hasan
+                                    </h2>
+                                    <h5 className="text-right text-[#459bd5] text-base md:text-lg font-button mt-[3px]">
+                                        Founder, Cleaning
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                className="flex flex-col md:flex-row justify-between items-center rounded-lg p-7 md:p-9 cursor-grab"
+                            >
+                                <img
+                                    className="hover:scale-110 ease-in-out duration-200 shrink-0 w-[120px] h-[120px] md:w-[180px] md:h-[180px] rounded-full "
+                                    src={Rafsan}
+                                    alt="testimonial 3"
+                                />
+                                <div
+                                    className=" text-left pt-6 md:pt-16"
+                                >
+                                    <p className="max-w-[485px] text-sm md:text-base my-3.5 md:my-[18px] text-white font-button">
+                                        “Nayeb is a talented, committed individual who will leave no
+                                        stone unturned in his pursuit to provide with the best. His
+                                        attention to detail and in-depth experience in the of web
+                                        development is indeed commendable. He has exhibited exemplary
+                                        skills in the field, and I hope to see all the great projects
+                                        coming up!”
+                                    </p>
+                                    <h2
+                                        className="text-right text-[#459bd5] font-bold text-2xl md:text-4xl font-button"
+                                    >
+                                        Rafsan  Imtiaz
+                                    </h2>
+                                    <h5 className="text-right text-[#459bd5] text-base md:text-lg font-button mt-[3px]">
+                                        Founder, Agence
+                                    </h5>
                                 </div>
                             </div>
                         </div>

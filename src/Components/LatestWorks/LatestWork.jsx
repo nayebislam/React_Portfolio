@@ -20,7 +20,7 @@ const LatestWork = () => {
                     <div className='w-full justify-center sm:justify-start flex mt-2.5'>
                         <span className='relative group sm:hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img src={Innovate} alt="" />
+                                <img className='drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]' src={Innovate} alt="" />
                                 <div className='tooltip bg-[#373AA0] text-white text-sm sm:text-base py-2 px-5 mt-2.5 sm:mt-0 font-semibold rounded w-max mx-auto font-button items-center sm:absolute top-[-16px] left-1/2 sm:-translate-x-1/2 after:content[""] after:hidden sm:after:block after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#373AA0] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-100 sm:opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Innovate
@@ -52,7 +52,7 @@ const LatestWork = () => {
                     <div className='w-full justify-center sm:justify-end flex mt-2.5'>
                         <span className='relative group sm:hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img src={cleaning} alt="" />
+                                <img className='drop-shadow-[0_0px_60px_rgba(43,135,97,0.687)]' src={cleaning} alt="" />
                                 <div className='tooltip bg-[#2B8761] text-black text-sm sm:text-base py-2 px-5 mt-2.5 sm:mt-0 font-semibold rounded w-max mx-auto font-button items-center sm:absolute top-[-16px] left-1/2 sm:-translate-x-1/2 after:content[""] after:hidden sm:after:block after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#2B8761] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-100 sm:opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Cleaning
@@ -83,7 +83,7 @@ const LatestWork = () => {
                     <div className='w-full justify-center sm:justify-start flex mt-2.5'>
                         <span className='relative group sm:hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img src={Agence} alt="" />
+                                <img className='drop-shadow-[0_0px_60px_rgba(105,77,244,0.6)]' src={Agence} alt="" />
                                 <div className='tooltip bg-[#6A4DF4] text-white text-sm sm:text-base py-2 px-5 mt-2.5 sm:mt-0 font-semibold rounded w-max mx-auto font-button items-center sm:absolute top-[-16px] left-1/2 sm:-translate-x-1/2 after:content[""] after:hidden sm:after:block after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#6A4DF4] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-100 sm:opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Agence
@@ -114,7 +114,7 @@ const LatestWork = () => {
                     <div className='w-full justify-center sm:justify-end flex mt-2.5'>
                         <span className='relative group sm:hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img src={BMI_Calculator} alt="" />
+                                <img className='drop-shadow-[0_0px_60px_rgba(44,62,80,10)]' src={BMI_Calculator} alt="" />
                                 <div className='tooltip bg-[#2c3e50] text-white text-sm sm:text-base py-2 px-5 mt-2.5 sm:mt-0 font-semibold rounded w-max mx-auto font-button items-center sm:absolute top-[-16px] left-1/2 sm:-translate-x-1/2 after:content[""] after:hidden sm:after:block after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#2c3e50] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-100 sm:opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Cleaning
@@ -145,7 +145,7 @@ const LatestWork = () => {
                     <div className='w-full justify-center sm:justify-start flex mt-2.5'>
                         <span className='relative group sm:hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img src={Digital_Clock} alt="" />
+                                <img className='drop-shadow-[0_0px_60px_rgba(244,27,117,0.4)]' src={Digital_Clock} alt="" />
                                 <div className='tooltip bg-[#f41b75] text-black text-sm sm:text-base py-2 px-5 mt-2.5 sm:mt-0 font-semibold rounded w-max mx-auto font-button items-center sm:absolute top-[-16px] left-1/2 sm:-translate-x-1/2 after:content[""] after:hidden sm:after:block after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#f41b75] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-100 sm:opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Digital Clock
