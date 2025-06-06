@@ -73,19 +73,19 @@ const Navbar = () => {
         </Conteiner>
         <ul className=' ml-auto space-y-6 absolute right-8'>
           <li>
-            <a href="#"><FaLinkedinIn size={35} className='text-[#b0b2c3] hover:text-white ' /></a>
+            <a href="#"><FaLinkedinIn size={35} className='text-[#b0b2c3] hover:text-white ease-in-out duration-200' /></a>
           </li>
           <li>
-            <a href="#"><FaTwitter size={35} className='text-[#b0b2c3] hover:text-white ' /></a>
+            <a href="#"><FaTwitter size={35} className='text-[#b0b2c3] hover:text-white ease-in-out duration-200' /></a>
           </li>
           <li>
-            <a href=""><GrInstagram size={35} className='text-[#b0b2c3] hover:text-white' /></a>
+            <a href=""><GrInstagram size={35} className='text-[#b0b2c3] hover:text-white ease-in-out duration-200' /></a>
           </li>
           <li>
-            <a href="#"><LuMail size={35} className='text-[#b0b2c3] hover:text-white' /></a>
+            <a href="#"><LuMail size={35} className='text-[#b0b2c3] hover:text-white ease-in-out duration-200' /></a>
           </li>
           <li>
-            <a href="#"><SiGithub size={35} className='text-[#b0b2c3] hover:text-white' /></a>
+            <a href="#"><SiGithub size={35} className='text-[#b0b2c3] hover:text-white ease-in-out duration-200' /></a>
           </li>
         </ul>
       </div>
