@@ -1,10 +1,9 @@
 import React from 'react'
 import Innovate from "../../assets/Innovate.png";
-import LaptopImage from "../../assets/LaptopImage.png";
-import cleaning from "../../assets/cleaning.jpg";
-import Agence from "../../assets/agence.png";
-import BMI_Calculator from "../../assets/BMI_Calculator.png";
-import Digital_Clock from "../../assets/Digital_Clock.png";
+import cleaning from "../../assets/Cleaning.png";
+import Agence from "../../assets/Agence.png";
+import BMI_Calculator from "../../assets/BMI-Calculator.png";
+import Digital_Clock from "../../assets/Digital-Clock.png";
 import { FiExternalLink } from "react-icons/fi";
 import Conteiner from '../Conteiner/Conteiner.jsx';
 
@@ -21,8 +20,7 @@ const LatestWork = () => {
                     <div className='w-full flex mt-2.5'>
                         <span className='relative group hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img className='max-w-[400px] relative' src={LaptopImage} alt="" />
-                                <img className='max-w-[292px] absolute top-[19px] left-[54px]' src={Innovate} alt="" />
+                                <img src={Innovate} alt="" />
                                 <div className='tooltip bg-[#373AA0] text-white py-2 px-5 font-semibold rounded-[5px] font-button items-center absolute top-[-16px] left-1/2 -translate-x-1/2 after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#373AA0] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Innovate
@@ -54,8 +52,7 @@ const LatestWork = () => {
                     <div className='w-full justify-end flex mt-2.5'>
                         <span className='relative group hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img className='max-w-[400px]' src={LaptopImage} alt="" />
-                                <img className='max-w-[290px] absolute top-[21px] left-[55px]' src={cleaning} alt="" />
+                                <img src={cleaning} alt="" />
                                 <div className='tooltip bg-[#2B8761] text-black py-2 px-5 font-semibold rounded-[5px] font-button items-center absolute top-[-16px] left-1/2 -translate-x-1/2 after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#2B8761] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Cleaning
@@ -86,7 +83,6 @@ const LatestWork = () => {
                     <div className='w-full flex mt-2.5'>
                         <span className='relative group hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                {/* <img className='max-w-[400px]' src={LaptopImage} alt="" /> */}
                                 <img src={Agence} alt="" />
                                 <div className='tooltip bg-[#6A4DF4] text-white py-2 px-5 font-semibold rounded-[5px] font-button items-center absolute top-[-16px] left-1/2 -translate-x-1/2 after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#6A4DF4] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
@@ -118,8 +114,7 @@ const LatestWork = () => {
                     <div className='w-full justify-end flex mt-2.5'>
                         <span className='relative group hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img className='max-w-[400px]' src={LaptopImage} alt="" />
-                                <img className='max-w-[290px] h-[180px] absolute top-[21px] left-1/2 -translate-x-1/2' src={BMI_Calculator} alt="" />
+                                <img src={BMI_Calculator} alt="" />
                                 <div className='tooltip bg-[#2c3e50] text-white py-2 px-5 font-semibold rounded-[5px] font-button items-center absolute top-[-16px] left-1/2 -translate-x-1/2 after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#2c3e50] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Cleaning
@@ -150,8 +145,7 @@ const LatestWork = () => {
                     <div className='w-full flex mt-2.5'>
                         <span className='relative group hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img className='max-w-[400px]' src={LaptopImage} alt="" />
-                                <img className='max-w-[292px] absolute top-1/2 -translate-y-1/2 left-[54px]' src={Digital_Clock} alt="" />
+                                <img src={Digital_Clock} alt="" />
                                 <div className='tooltip bg-[#f41b75] text-black py-2 px-5 font-semibold rounded-[5px] font-button items-center absolute top-[-16px] left-1/2 -translate-x-1/2 after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#f41b75] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Digital Clock
