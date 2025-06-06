@@ -20,7 +20,7 @@ const Navbar = () => {
     <section className='bg-dark flex flex-col justify-between h-screen'>
       <div className='z-[9]'>
         <Conteiner>
-          <div className='flex items-center px-4 pt-4 justify-between'>
+          <div className='flex items-center pt-4 justify-between'>
             <svg
               width="70"
               height="70"

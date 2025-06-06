@@ -9,7 +9,7 @@ import Conteiner from '../Conteiner/Conteiner.jsx';
 
 const LatestWork = () => {
     return (
-        <section className='px-4 bg-dark relative'>
+        <section className='bg-dark relative pb-[48px]'>
             <Conteiner>
                 <div>
                     <h2 className='relative bg-dark z-10 text-3xl sm:text-[40px] font-bold font-button w-max mx-auto text-center text-primary py-2 px-5 sm:border-b-2 border-primary'>Latest Works</h2>
