@@ -2,7 +2,7 @@ import React from 'react'
 import Innovate from "../../assets/Innovate.png";
 import LaptopImage from "../../assets/LaptopImage.png";
 import cleaning from "../../assets/cleaning.jpg";
-import Agence from "../../assets/agence.jpg";
+import Agence from "../../assets/agence.png";
 import BMI_Calculator from "../../assets/BMI_Calculator.png";
 import Digital_Clock from "../../assets/Digital_Clock.png";
 import { FiExternalLink } from "react-icons/fi";
@@ -86,8 +86,8 @@ const LatestWork = () => {
                     <div className='w-full flex mt-2.5'>
                         <span className='relative group hover:scale-105 ease-in-out duration-200'>
                             <a href="#" className=''>
-                                <img className='max-w-[400px]' src={LaptopImage} alt="" />
-                                <img className='max-w-[290px] absolute top-[21px] left-[55px]' src={Agence} alt="" />
+                                {/* <img className='max-w-[400px]' src={LaptopImage} alt="" /> */}
+                                <img src={Agence} alt="" />
                                 <div className='tooltip bg-[#6A4DF4] text-white py-2 px-5 font-semibold rounded-[5px] font-button items-center absolute top-[-16px] left-1/2 -translate-x-1/2 after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#6A4DF4] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                                     <span className='relative z-10 flex items-center gap-1'>
                                         Agence
