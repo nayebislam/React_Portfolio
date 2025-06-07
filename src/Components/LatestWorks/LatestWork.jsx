@@ -9,7 +9,7 @@ import Conteiner from "../Conteiner/Conteiner.jsx";
 
 const LatestWork = () => {
   return (
-    <section className="bg-dark relative pb-[48px]">
+    <section id="LatestWork" className="bg-dark relative pb-[48px]">
       <Conteiner>
         <div>
           <h2 className="relative bg-dark z-10 text-3xl sm:text-[40px] font-bold font-button w-max mx-auto text-center text-primary py-2 px-5 sm:border-b-2 border-primary">
@@ -17,11 +17,11 @@ const LatestWork = () => {
           </h2>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-0">
-          <div className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#373AA0] absolute top-1/2"></div>
-          <div className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#373AA0] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"></div>
+          <a href="https://innovatee.vercel.app" className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#373AA0] absolute top-1/2"></a>
+          <a href="https://innovatee.vercel.app" className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#373AA0] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"></a>
           <div className="w-full justify-center sm:justify-start flex mt-2.5">
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
-              <a href="#" className="">
+              <a href="https://innovatee.vercel.app" className="">
                 <img
                   className="drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
                   src={Innovate}
@@ -76,17 +76,17 @@ const LatestWork = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row-reverse gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
-          <div className="hidden sm:block h-[1px] right-1/4 left-1/2 bg-[#2B8761] absolute top-1/2"></div>
-          <div className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2B8761] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"></div>
+          <a href="https://nayebislam.github.io/Cleaning/" className="hidden sm:block h-[1px] right-1/4 left-1/2 bg-[#2B8761] absolute top-1/2"/>
+          <a href="https://nayebislam.github.io/Cleaning/" className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2B8761] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
           <div className="w-full justify-center sm:justify-end flex mt-2.5">
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
-              <a href="#" className="">
+              <a href="https://nayebislam.github.io/Cleaning/" className="">
                 <img
-                  className="drop-shadow-[0_0px_60px_rgba(43,135,97,0.687)]"
+                  className="drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
                   src={cleaning}
-                  alt=""
+                  alt="#cleaning"
                 />
-                <div className='tooltip bg-[#2B8761] text-black text-sm sm:text-base py-2 px-5 mt-2.5 sm:mt-0 font-semibold rounded w-max mx-auto font-button items-center sm:absolute top-[-16px] left-1/2 sm:-translate-x-1/2 after:content[""] after:hidden sm:after:block after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#2B8761] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-100 sm:opacity-0'>
+                <div className='tooltip bg-[#2B8761] text-white text-sm sm:text-base py-2 px-5 mt-2.5 sm:mt-0 font-semibold rounded w-max mx-auto font-button items-center sm:absolute top-[-16px] left-1/2 sm:-translate-x-1/2 after:content[""] after:hidden sm:after:block after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#2B8761] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-100 sm:opacity-0'>
                   <span className="relative z-10 flex items-center gap-1">
                     Cleaning
                     <FiExternalLink />
@@ -132,13 +132,13 @@ const LatestWork = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
-          <div className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#6A4DF4] absolute top-1/2"></div>
-          <div className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#6A4DF4] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"></div>
+          <a href="https://nayebislam.github.io/Agenc/" className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#6A4DF4] absolute top-1/2"/>
+          <a href="https://nayebislam.github.io/Agenc/" className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#6A4DF4] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
           <div className="w-full justify-center sm:justify-start flex mt-2.5">
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
-              <a href="#" className="">
+              <a href="https://nayebislam.github.io/Agenc/" className="">
                 <img
-                  className="drop-shadow-[0_0px_60px_rgba(105,77,244,0.6)]"
+                  className="drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
                   src={Agence}
                   alt=""
                 />
@@ -188,13 +188,13 @@ const LatestWork = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row-reverse gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
-          <div className="hidden sm:block h-[1px] right-[27%] left-1/2 bg-[#2c3e50] absolute top-1/2"></div>
-          <div className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2c3e50] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"></div>
+          <a href="https://nayebislam.github.io/BMI-Calculator/" className="hidden sm:block h-[1px] right-[27%] left-1/2 bg-[#2c3e50] absolute top-1/2"/>
+          <a href="https://nayebislam.github.io/BMI-Calculator/" className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2c3e50] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
           <div className="w-full justify-center sm:justify-end flex mt-2.5">
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
-              <a href="#" className="">
+              <a href="https://nayebislam.github.io/BMI-Calculator/" className="">
                 <img
-                  className="drop-shadow-[0_0px_60px_rgba(44,62,80,10)]"
+                  className="drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
                   src={BMI_Calculator}
                   alt=""
                 />
@@ -244,13 +244,13 @@ const LatestWork = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
-          <div className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#f41b75] absolute top-1/2"></div>
-          <div className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#f41b75] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"></div>
+          <a href="https://nayebislam.github.io/Digital-Clock/" className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#f41b75] absolute top-1/2"/>
+          <a href="https://nayebislam.github.io/Digital-Clock/" className="hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#f41b75] absolute left-1/2 -translate-x-1/2 bg-dark z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
           <div className="w-full justify-center sm:justify-start flex mt-2.5">
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
-              <a href="#" className="">
+              <a href="https://nayebislam.github.io/Digital-Clock/" className="">
                 <img
-                  className="drop-shadow-[0_0px_60px_rgba(244,27,117,0.4)]"
+                  className="drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
                   src={Digital_Clock}
                   alt=""
                 />

@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './Components/Footer/Footer'
 import LatestWork from './Components/LatestWorks/LatestWork'
 import LetsConnect from './Components/LetsConnect/LetsConnect'
 import Navbar from './Components/Navbar/Navbar'
@@ -13,6 +14,7 @@ function App() {
       <LatestWork />
       <ReviewSlider />
       <LetsConnect />
+      <Footer />
     </>
 
   )

@@ -1,6 +1,7 @@
 import React from "react";
 import Conteiner from "../Conteiner/Conteiner";
 import ContactMe from "../../assets/contact-me.svg";
+import { IoIosSend } from "react-icons/io";
 
 const LetsConnect = () => {
   return (
@@ -44,7 +45,7 @@ const LetsConnect = () => {
               for="email"
               className="font-button block mb-2 text-sm font-medium text-gray-900 dark:text-white"
             >
-              Your Email
+              Email
             </label>
             <div className="relative mb-4">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none">
@@ -64,7 +65,7 @@ const LetsConnect = () => {
                 id="email"
                 name="email"
                 className="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-                placeholder="name@procodrr.com"
+                placeholder="name@nayeb.com"
               />
             </div>
             <label
@@ -84,9 +85,10 @@ const LetsConnect = () => {
             </div>
             <button
               type="submit"
-              className="font-button w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
+              className="flex justify-center gap-1 items-center font-button w-full text-white bg-[#1788ae] hover:bg-[#1280a4] focus:ring-4 focus:ring-[#4489a0] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none"
             >
-              Send
+              <IoIosSend size={20} />
+              Send Message
             </button>
           </form>
         </div>
