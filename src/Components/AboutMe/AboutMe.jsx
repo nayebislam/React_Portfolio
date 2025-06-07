@@ -8,13 +8,16 @@ import { createPortal } from "react-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'animate.css';
+import FadeContent from '../ReactBits/FadeContent '
+
 
 
 const AboutMe = ({ isClose, setIsClose }) => {
     AOS.init();
     return (
         createPortal(
-            <section onClick={() => setIsClose(false)} className={`${isClose ? '' : 'hidden'} w-[100vw] h-[100vh] top-0 left-0 right-0 bottom-0 fixed bg-[#111111b3] z-100`}>
+           
+             <section    onClick={() => setIsClose(false)} className={`${isClose ? '' : 'hidden'} w-[100vw] h-[100vh] top-0 left-0 right-0 bottom-0 fixed bg-[#111111b3] z-100`}>
                 <div onClick={(e) => e.stopPropagation()} className='w-[90%] max-w-[1200px] h-[700px] bg-[#191919] rounded-[10px] shadow-lg absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] ease-in-out duration-200'>
                     <div onClick={() => setIsClose(false)} className='x_icon flex justify-center items-center w-[30px] h-[30px] rounded-[50%] bg-[#27292d] absolute top-[15px] right-[15px] ease-in-out duration-150 cursor-pointer shadow-[0_0_10px_rgba(0,0,0,0.5)] hover:rotate-90 hover:scale-105'>
                         <svg

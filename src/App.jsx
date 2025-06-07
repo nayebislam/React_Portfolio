@@ -1,5 +1,6 @@
 import './App.css'
 import LatestWork from './Components/LatestWorks/LatestWork'
+import LetsConnect from './Components/LetsConnect/LetsConnect'
 import Navbar from './Components/Navbar/Navbar'
 import ReviewSlider from './Components/Slider/ReviewSlider'
 
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <LatestWork />
       <ReviewSlider />
+      <LetsConnect />
     </>
 
   )
