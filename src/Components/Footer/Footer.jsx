@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
           <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/nayeb-gazi-94436236a/">
                 <FaLinkedinIn
                   size={20}
                   className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
@@ -69,7 +69,7 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://x.com/NayebGazi">
                 <FaTwitter
                   size={20}
                   className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
