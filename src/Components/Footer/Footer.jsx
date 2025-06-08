@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
           <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
             <li>
-              <a href="https://www.linkedin.com/in/nayeb-gazi-94436236a/">
+              <a href="https://www.linkedin.com/in/nayebgazi/">
                 <FaLinkedinIn
                   size={20}
                   className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"

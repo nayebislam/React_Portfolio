@@ -21,7 +21,7 @@ const AboutMe = ({ isClose, setIsClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-[90%] max-w-[1200px] h-[700px] bg-[#191919] rounded-[10px] shadow-lg absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] ease-in-out duration-200"
+        className="w-[90%] max-w-[1200px] lg:h-[700px] bg-[#191919] rounded-[10px] shadow-lg absolute top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] ease-in-out duration-200"
       >
         <div
           onClick={() => setIsClose(false)}
@@ -43,13 +43,13 @@ const AboutMe = ({ isClose, setIsClose }) => {
             <line x1="6" y1="6" x2="18" y2="18"></line>
           </svg>
         </div>
-        <div className="flex items-center justify-center">
-          <div>
-            <div className="w-[70%] mx-auto mt-12">
+        <div className="flex lg:flex-row flex-col items-center justify-center">
+          <div className="mx-12">
+            <div className="lg:w-[70%] mx-auto text-center lg:text-left mt-12">
               <h2 className="text-[#1788ae] text-2xl font-bold font-button mb-5">
                 ABOUT ME
               </h2>
-              <p className="max-w-[390px] font-button text-justify text-white my-4">
+              <p className="lg:max-w-[390px] max-w-[700px] font-button text-justify text-white my-4">
                 I’m Nayeb Gazi and I am self taught front-end developer from
                 Bangladesh. Programming and web development is my passion and I
                 believe in helping people with my abilities and knowledge. I am
@@ -88,11 +88,11 @@ const AboutMe = ({ isClose, setIsClose }) => {
                   #figma
                 </li>
               </ul>
-              <div>
-                <h2 className="font-button mt-12 mb-15 text-2xl font-bold text-[#1788ae]">
+              <div className="mb-6 md:mb-0">
+                <h2 className="font-button mt-8 lg:mt-12 mb-15 text-2xl font-bold text-[#1788ae]">
                   Front End Developer
                 </h2>
-                <div className="flex items-center gap-x-8 relative mt-6">
+                <div className="flex items-center justify-center lg:justify-normal gap-x-8 relative mt-6">
                   <div className="flex flex-col items-center gap-3 group">
                     <div className='tooltip bg-[#61dafb] text-black py-2 px-5 font-semibold rounded-[50px] font-button items-center absolute top-[-16px] after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#61dafb] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                       <span className="relative z-10">React.JS</span>
@@ -139,7 +139,7 @@ const AboutMe = ({ isClose, setIsClose }) => {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="items-center justify-center hidden md:flex">
             <img src={coder} alt="" />
           </div>
         </div>

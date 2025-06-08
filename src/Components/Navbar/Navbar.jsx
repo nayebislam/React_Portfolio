@@ -109,7 +109,7 @@ const Navbar = () => {
         </Conteiner>
         <ul className=" ml-auto space-y-6 absolute right-8">
           <li>
-            <a href="https://www.linkedin.com/in/nayeb-gazi-94436236a/">
+            <a href="https://www.linkedin.com/in/nayebgazi/">
               <FaLinkedinIn
                 size={35}
                 className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
