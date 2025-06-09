@@ -45,19 +45,16 @@ const AboutMe = ({ isClose, setIsClose }) => {
             </svg>
           </div>
           <div className="w-full">
-            <div className="lg:w-[65%] w-[90%] mx-auto text-center lg:text-left my-5 lg:my-12">
-              <h2 className="text-[#1788ae] text-2xl font-bold font-button pt-5">
+            <div className="lg:w-[65%] w-[90%] mx-auto text-center lg:text-left py-5 lg:py-12">
+              <h2 className="text-[#1788ae] text-2xl font-bold font-button pt-5 lg:pt-0">
                 ABOUT ME
               </h2>
               <p className="lg:max-w-[390px] font-button text-justify text-white mt-5">
                 I’m Nayeb Gazi and I am self taught front-end developer from
                 Bangladesh. Programming and web development is my passion and I
-                believe in helping people with my abilities and knowledge. I am
-                learning and working at my home last 1 years and it feels like a
+                believe in helping people with my abilities and knowledge. It feels like a
                 part of my life. Proficient in HTML5, CSS3, JavaScript, and
-                modern frameworks like React.js. Passionate about staying
-                updated with the latest industry trends and continuously
-                enhancing technical skills.
+                modern frameworks like React.js
               </p>
               <ul className="flex flex-wrap font-button text-white my-3.5">
                 <li className="border border-[#444] py-[5.5px] px-[10px] mb-[6.8px] mr-[6.8px] rounded-[50px] text-[13.6px]">
