@@ -38,7 +38,7 @@ const LetsConnect = () => {
     }
   };
   return (
-    <section className="pb-12 pt-0 md:pt-10 bg-dark">
+    <section id="LatsConnect" className="pb-12 pt-0 md:pt-10 bg-dark">
       <Conteiner>
         <h2 class="font-button text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
           Let's Connect

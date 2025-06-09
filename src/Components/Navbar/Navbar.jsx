@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-import { BsTelephone } from "react-icons/bs";
 import { FiMail, FiSun } from "react-icons/fi";
 import { LuMail, LuMoon } from "react-icons/lu";
-import { BsWhatsapp } from "react-icons/bs";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 import Conteiner from "../Conteiner/Conteiner";
 import { GrInstagram } from "react-icons/gr";
@@ -12,6 +10,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import AboutMe from "../AboutMe/AboutMe";
 import ScrollSpy from "react-scrollspy-navigation";
+import CV from "../../assets/Resume.pdf";
 
 const Navbar = () => {
   AOS.init();
@@ -40,12 +39,22 @@ const Navbar = () => {
                 stroke-width="10"
               />
             </svg>
-            <div className="text-white flex gap-4">
+            <ul className="text-white flex gap-10 ">
+              <li className="relative group">
+                <a href="#LatestWork" className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250">Works</a>
+              </li>
+              <li className="relative group">
+                <a href="#LatsConnect" className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250">Contact</a>
+              </li>
+              <li className="relative group">
+                <a href={CV} download className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250">Download CV</a>
+              </li>
               <FiSun className="w-[24px] h-[24px] cursor-pointer" />
               <LuMoon className="w-[24px] h-[24px] hidden cursor-pointer" />
-              <BsTelephone className="w-[24px] h-[24px] cursor-pointer" />
-              <BsWhatsapp className="w-[24px] h-[24px] cursor-pointer" />
-            </div>
+            </ul>
           </div>
         </Conteiner>
       </div>
@@ -107,7 +116,7 @@ const Navbar = () => {
             </div>
           </div>
         </Conteiner>
-        <ul className=" ml-auto space-y-6 absolute right-8">
+        <ul className=" ml-auto space-y-6 absolute right-7">
           <li>
             <a href="https://www.linkedin.com/in/nayebgazi/">
               <FaLinkedinIn
