@@ -10,53 +10,124 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import AboutMe from "../AboutMe/AboutMe";
 import ScrollSpy from "react-scrollspy-navigation";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { MdClose } from "react-icons/md";
 import CV from "../../assets/Resume.pdf";
 
 const Navbar = () => {
   AOS.init();
   const [isClose, setIsClose] = useState(false);
+  const [show, setShow] = useState(false);
+  const handleClick = () => {
+    setShow(true);
+  };
   return (
     <section className="bg-dark flex flex-col justify-between h-screen">
       <div className="z-[9]">
         <Conteiner>
-          <div className="flex items-center pt-4 justify-between">
-            <svg
-              width="70"
-              height="70"
-              viewBox="0 0 406 368"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
-                stroke="white"
-                stroke-opacity="0.9"
-                stroke-width="10"
+          <div className="sm:flex items-center pt-4 justify-between">
+            <div className="flex !justify-between items-center">
+              <svg
+                width="70"
+                height="70"
+                viewBox="0 0 406 368"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+                  stroke="white"
+                  stroke-opacity="0.9"
+                  stroke-width="10"
+                />
+                <path
+                  d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+                  stroke="white"
+                  stroke-width="10"
+                />
+              </svg>
+              <FaBarsStaggered
+                onClick={handleClick}
+                className="block sm:hidden text-2xl text-white"
               />
-              <path
-                d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
-                stroke="white"
-                stroke-width="10"
-              />
-            </svg>
-            <ul className="text-white flex gap-10 ">
+            </div>
+            <ul className="text-white sm:flex gap-10 hidden">
               <li className="relative group">
-                <a href="#LatestWork" className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250">Works</a>
+                <a
+                  href="#LatestWork"
+                  className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                >
+                  Works
+                </a>
               </li>
               <li className="relative group">
-                <a href="#LatsConnect" className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250">Contact</a>
+                <a
+                  href="#LatsConnect"
+                  className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                >
+                  Contact
+                </a>
               </li>
               <li className="relative group">
-                <a href={CV} download className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250">Download CV</a>
+                <a
+                  href={CV}
+                  download
+                  className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                >
+                  Download CV
+                </a>
               </li>
               <FiSun className="w-[24px] h-[24px] cursor-pointer" />
               <LuMoon className="w-[24px] h-[24px] hidden cursor-pointer" />
             </ul>
           </div>
         </Conteiner>
+        {show && 
+          <div className="relative flex flex-col justify-center items-center">
+            <div>
+              <MdClose
+                onClick={() => setShow(false)}
+                className="block absolute top-[-42px] right-5 sm:hidden text-2xl text-white cursor-pointer"
+              />
+            </div>
+
+            <div>
+              <ul className="text-white flex-col sm:flex gap-10">
+                <li className="relative group">
+                  <a
+                    href="#LatestWork"
+                    className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                  >
+                    Works
+                  </a>
+                </li>
+                <li className="relative group">
+                  <a
+                    href="#LatsConnect"
+                    className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                  >
+                    Contact
+                  </a>
+                </li>
+                <li className="relative group">
+                  <a
+                    href={CV}
+                    download
+                    className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                  >
+                    Download CV
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        }
       </div>
       <div className="flex -mt-10 relative">
         <Conteiner>

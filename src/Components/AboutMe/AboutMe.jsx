@@ -8,7 +8,7 @@ import { createPortal } from "react-dom";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "animate.css";
-import FadeContent from "../ReactBits/FadeContent ";
+// import FadeContent from "../ReactBits/FadeContent ";
 
 const AboutMe = ({ isClose, setIsClose }) => {
   AOS.init();
