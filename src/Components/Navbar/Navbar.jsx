@@ -85,7 +85,7 @@ const Navbar = () => {
             </ul>
           </div>
         </Conteiner>
-        {show && 
+        {show && (
           <div className="relative flex flex-col justify-center items-center">
             <div>
               <MdClose
@@ -127,7 +127,7 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-        }
+        )}
       </div>
       <div className="flex -mt-10 relative">
         <Conteiner>
