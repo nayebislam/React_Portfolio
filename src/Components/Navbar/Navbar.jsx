@@ -17,10 +17,10 @@ import CV from "../../assets/Resume.pdf";
 const Navbar = () => {
   AOS.init();
   const [isClose, setIsClose] = useState(false);
-  const [show, setShow] = useState(false);
-  const handleClick = () => {
-    setShow(true);
-  };
+  const [show, setShow] = useState(false)
+    const handleClick = () => {
+        setShow(true)
+    }
   return (
     <section className="bg-dark flex flex-col justify-between h-screen">
       <div className="z-[9]">
@@ -48,7 +48,7 @@ const Navbar = () => {
               </svg>
               <FaBarsStaggered
                 onClick={handleClick}
-                className="block sm:hidden text-2xl text-white"
+                className="block sm:hidden text-2xl text-white cursor-pointer"
               />
             </div>
             <ul className="text-white sm:flex gap-10 hidden">
@@ -85,7 +85,7 @@ const Navbar = () => {
             </ul>
           </div>
         </Conteiner>
-        {show && (
+        {show && 
           <div className="relative flex flex-col justify-center items-center">
             <div>
               <MdClose
@@ -95,7 +95,7 @@ const Navbar = () => {
             </div>
 
             <div>
-              <ul className="text-white flex-col sm:flex gap-10">
+              <ul className="text-white flex-col text-center sm:flex gap-10">
                 <li className="relative group">
                   <a
                     href="#LatestWork"
@@ -127,7 +127,7 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-        )}
+        }
       </div>
       <div className="flex -mt-10 relative">
         <Conteiner>
