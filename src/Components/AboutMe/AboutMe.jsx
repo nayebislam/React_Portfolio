@@ -22,7 +22,7 @@ const AboutMe = ({ isClose, setIsClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="w-[90%] max-w-[1200px] bg-[#191919] rounded-[10px] fixed top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] ease-in-out duration-200 shadow-[0_20px_80px_0_rgba(0,0,0.55)]"
+        className="aboutPart w-[90%] max-w-[1200px] rounded-[10px] fixed top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%] ease-in-out duration-200 shadow-[0_20px_80px_0_rgba(0,0,0.55)]"
       >
         <div className="flex lg:flex-row flex-col items-center justify-center">
           <div

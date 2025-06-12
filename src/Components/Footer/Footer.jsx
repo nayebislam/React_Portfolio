@@ -51,7 +51,7 @@ const Footer = () => {
                   </linearGradient>
                 </defs>
               </svg>
-              <div className='btn text-sm sm:text-base py-2 px-3 font-semibold rounded font-button items-center w-max absolute top-1/2 -translate-y-1/2 left-[-16px] after:content[""] after:absolute after:w-[12px] after:h-[12px] after:left-1/2 after:-translate-x-1/2 after:top-[-6px] after:rotate-45 after:bg-primary group-hover:left-[60px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
+              <div className='bg-[#1788ae] text-sm sm:text-base py-2 px-3 font-semibold rounded font-button items-center w-max absolute top-1/2 -translate-y-1/2 left-[-16px] after:content[""] after:absolute after:w-[12px] after:h-[12px] after:left-1/2 after:-translate-x-1/2 after:top-[-6px] after:rotate-45 after:bg-primary group-hover:left-[60px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                 <span className="relative z-10 flex items-center gap-2">
                   <TbDeviceDesktopUp size={20} />
                   To Top

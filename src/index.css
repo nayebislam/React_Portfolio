@@ -16,6 +16,7 @@
     --main-heading: #1788ae; 
     --pera-color: #b0b2c3;
     --text-color: white;
+    --h1-color: white;
     --btn-bg-color: #4595eb;
     --btn-text-color: white;
     --bg-color: #111111;
@@ -27,19 +28,20 @@
     --pera-color: #53566e;
     --text-color: black;
     --btn-bg-color: #4595eb;
-    --btn-text-color: white;
+    --btn-text-color: black;
     --btn-icon-color: black;
     --bg-color: white;
+    --h1-color: #4c4f65;
     --border-color: #1788ae;
     --btn-color: #ffffff;
 }
 
-section {
+section, footer ,.aboutPart {
   background: var(--bg-color);
 }
 
 .logo{
-  color: var(--btn-text-color);
+  stroke: var(--btn-text-color);
 }
 
 ul{
@@ -50,25 +52,36 @@ ul li a:hover{
   color: var(--text-color);
 }
 
-h1, p {
+p {
   color: var(--text-color);
+}
+
+h1{
+  color: var(--h1-color);
 }
 
 .btn{
   color: var(--btn-text-color);
-  background: var(--main-heading);
 }
 
-.btn-icon{
-  color: var(--btn-icon-color);
-}
 
 h2 {
   color: var(--main-heading);
   border-color: var(--main-heading);
+}
+
+.btn-bg {
   background: var(--btn-color);
 }
 
 .line {
   background: var(--main-heading);
+}
+
+.circle {
+  background: var(--bg-color);
+}
+
+.x_icon {
+  background: var(--about-icon);
 }
