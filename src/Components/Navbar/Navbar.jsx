@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiMail, FiSun } from "react-icons/fi";
 import { LuMail, LuMoon } from "react-icons/lu";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
@@ -21,13 +21,25 @@ const Navbar = () => {
     const handleClick = () => {
         setShow(true)
     }
+  const [theme, setTheme] = useState("dark-theme");
+  const toggleTheme = () => {
+    if (theme === "light-theme") {
+      setTheme("dark-theme")
+    } else {
+      setTheme("light-theme")
+    }
+  };
+  useEffect(() => {
+    document.body.className = theme;
+  }, [])  
   return (
-    <section className="bg-dark flex flex-col justify-between h-screen">
+    <section className="flex flex-col justify-between h-screen">
       <div className="z-[9]">
         <Conteiner>
           <div className="sm:flex items-center pt-4 justify-between">
             <div className="flex !justify-between items-center">
               <svg
+                className="logo"
                 width="70"
                 height="70"
                 viewBox="0 0 406 368"
@@ -51,12 +63,12 @@ const Navbar = () => {
                 className="block sm:hidden text-2xl text-white cursor-pointer"
               />
             </div>
-            <ul className="text-white sm:flex gap-10 hidden">
+            <ul className="nav-ul sm:flex gap-10 hidden">
               <li className="relative group">
                 <a
                   href="#LatestWork"
-                  className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                  className="font-primary text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
                 >
                   Works
                 </a>
@@ -64,8 +76,8 @@ const Navbar = () => {
               <li className="relative group">
                 <a
                   href="#LatsConnect"
-                  className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                  className="font-primary text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
                 >
                   Contact
                 </a>
@@ -74,13 +86,13 @@ const Navbar = () => {
                 <a
                   href={CV}
                   download
-                  className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                  className="font-primary text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
                 >
                   Download CV
                 </a>
               </li>
-              <FiSun className="w-[24px] h-[24px] cursor-pointer" />
+              <FiSun onClick={() => toggleTheme()} className="w-[24px] h-[24px] cursor-pointer" />
               <LuMoon className="w-[24px] h-[24px] hidden cursor-pointer" />
             </ul>
           </div>
@@ -95,12 +107,12 @@ const Navbar = () => {
             </div>
 
             <div>
-              <ul className="text-white flex-col text-center sm:flex gap-10">
+              <ul className="flex-col text-center sm:flex gap-10">
                 <li className="relative group">
                   <a
                     href="#LatestWork"
-                    className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                    className="font-primary text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
                   >
                     Works
                   </a>
@@ -108,8 +120,8 @@ const Navbar = () => {
                 <li className="relative group">
                   <a
                     href="#LatsConnect"
-                    className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                    className="font-primary text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
                   >
                     Contact
                   </a>
@@ -118,8 +130,8 @@ const Navbar = () => {
                   <a
                     href={CV}
                     download
-                    className="font-primary text-[#b0b2c3] text-lg leading-7 font-bold before:content['']
-                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:text-white group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
+                    className="font-primary text-lg leading-7 font-bold before:content['']
+                before:absolute before:bottom-[0] before:right-0 before:left-auto before:bg-primary before:w-0 before:h-[3px] after:content[''] after:absolute after:bottom-[0] after:right-0 after:left-auto after:bg-[#f25757] after:w-0 after:h-[3px] group-hover:before:w-[100%] group-hover:before:left-0 group-hover:after:w-[100%] group-hover:after:left-0 ease-in-out duration-250 before:delay-250 after:delay-150 before:duration-250 after:duration-250"
                   >
                     Download CV
                   </a>
@@ -165,21 +177,21 @@ const Navbar = () => {
               </defs>
             </svg>
             <div className="relative">
-              <h1 className="text-white text-4xl md:text-[64px] font-primary font-bold mr-12">
+              <h1 className="text-4xl md:text-[64px] font-primary font-bold mr-12">
                 Nayeb Islam Nafi
               </h1>
-              <p className="font-secondary italic text-white mt-3 mb-4 md:mt-5 md:mb-8">
+              <p className="font-secondary italic mt-3 mb-4 md:mt-5 md:mb-8">
                 Front End Developer
               </p>
               <div>
                 <button
                   onClick={() => setIsClose(true)}
-                  className="font-button font-extrabold text-white bg-[#4595eb] py-[10px] px-5 rounded-sm bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group cursor-pointer"
+                  className="btn font-button font-extrabold bg-[#4595eb] py-[10px] px-5 rounded-sm bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group cursor-pointer"
                 >
                   About Me
                   <HiArrowLongRight
                     size={40}
-                    className="absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-7.5 ease-in-out duration-100"
+                    className="btn-icon absolute top-1/2 -translate-y-1/2 -right-6 group-hover:-right-7.5 ease-in-out duration-100"
                   />
                 </button>
                 <AboutMe isClose={isClose} setIsClose={setIsClose} />
@@ -187,12 +199,12 @@ const Navbar = () => {
             </div>
           </div>
         </Conteiner>
-        <ul className=" ml-auto space-y-6 absolute right-7">
+        <ul className="ml-auto space-y-6 absolute right-7">
           <li>
             <a href="https://www.linkedin.com/in/nayebgazi/">
               <FaLinkedinIn
                 size={35}
-                className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                className="ease-in-out duration-200"
               />
             </a>
           </li>
@@ -200,7 +212,7 @@ const Navbar = () => {
             <a href="https://x.com/NayebGazi">
               <FaTwitter
                 size={35}
-                className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                className="ease-in-out duration-200"
               />
             </a>
           </li>
@@ -208,7 +220,7 @@ const Navbar = () => {
             <a href="https://www.instagram.com/nayebislamnafi/">
               <GrInstagram
                 size={35}
-                className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                className="ease-in-out duration-200"
               />
             </a>
           </li>
@@ -216,7 +228,7 @@ const Navbar = () => {
             <a href="mailto:nayebgazi1@gmail.com">
               <LuMail
                 size={35}
-                className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                className="ease-in-out duration-200"
               />
             </a>
           </li>
@@ -224,7 +236,7 @@ const Navbar = () => {
             <a href="https://github.com/nayebislam">
               <SiGithub
                 size={35}
-                className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                className="ease-in-out duration-200"
               />
             </a>
           </li>
@@ -232,11 +244,11 @@ const Navbar = () => {
       </div>
       <div className='relative self-center after:content[""] after:absolute after:w-[2px] after:h-5 after:left-1/2 after:-translate-x-1/2 after:top-[100px] after:bg-[#444]'>
         <ScrollSpy>
-          <button className="font-button font-extrabold text-white bg-[#4595eb] py-[10px] px-5 rounded-sm bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group cursor-pointer mb-20">
+          <button className="btn font-button font-extrabold bg-[#4595eb] py-[10px] px-5 rounded-sm bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group cursor-pointer mb-20">
             <a href="#LatestWork">Latest Works</a>
             <HiArrowLongDown
               size={40}
-              className="absolute left-1/2 -translate-x-1/2 top-12 group-hover:top-13 ease-in-out duration-100"
+              className="btn-icon absolute left-1/2 -translate-x-1/2 top-12 group-hover:top-13 ease-in-out duration-100"
             />
           </button>
         </ScrollSpy>

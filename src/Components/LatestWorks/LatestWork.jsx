@@ -9,10 +9,10 @@ import Conteiner from "../Conteiner/Conteiner.jsx";
 
 const LatestWork = () => {
   return (
-    <section id="LatestWork" className="bg-dark relative pb-[48px]">
+    <section id="LatestWork" className="relative pb-[48px]">
       <Conteiner>
         <div>
-          <h2 className="relative bg-dark z-10 text-3xl sm:text-[40px] font-bold font-button w-max mx-auto text-center text-primary py-2 px-5 sm:border-b-2 border-primary">
+          <h2 className="relative z-10 text-3xl sm:text-[40px] font-bold font-button w-max mx-auto text-center  py-2 px-5 sm:border-b-2 ">
             Latest Works
           </h2>
         </div>
@@ -299,7 +299,7 @@ const LatestWork = () => {
             </ul>
           </div>
         </div>
-        <div className="w-[2px] hidden sm:block bg-primary absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
+        <div className="w-[2px] hidden sm:block line absolute top-0 bottom-0 left-1/2 -translate-x-1/2"></div>
       </Conteiner>
     </section>
   );

@@ -22,9 +22,9 @@ const ReviewSlider = () => {
     slidesToScroll: 1,
   };
   return (
-    <section className="bg-dark pb-12">
+    <section className="pb-12">
       <Conteiner>
-        <h2 class="font-button text-3xl sm:text-[40px] bg-[#111] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center text-[#1788ae] sm:border-2 border-[#1788ae] rounded-md">
+        <h2 class="font-button text-3xl sm:text-[40px] sm:w-max relative z-10 font-bold px-4 py-2 mx-auto text-center sm:border-2 rounded-md">
           What my clients are saying?
         </h2>
         <div className="w-full rounded-lg md:max-w-[800px] mx-auto mt-12 shadow-[0_0px_60px_rgba(59,130,246,0.6)] items-center">
