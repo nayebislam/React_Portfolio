@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { FiMail, FiSun } from "react-icons/fi";
+import { useEffect, useState } from "react";
+import { FiSun } from "react-icons/fi";
 import { LuMail, LuMoon } from "react-icons/lu";
 import { FaLinkedinIn, FaTwitter } from "react-icons/fa6";
 import Conteiner from "../Conteiner/Conteiner";
@@ -97,16 +97,16 @@ const Navbar = () => {
           </div>
         </Conteiner>
         {show && 
-          <div className="relative flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center items-center gap-2.5">
             <div>
               <MdClose
                 onClick={() => setShow(false)}
-                className="block absolute top-[-42px] right-5 sm:hidden text-2xl text-white cursor-pointer"
+                className="block sm:hidden text-2xl text-white cursor-pointer"
               />
             </div>
 
             <div>
-              <ul className="flex-col text-center sm:flex gap-10">
+              <ul className="flex-col text-center flex gap-y-2.5">
                 <li className="relative group">
                   <a
                     href="#LatestWork"

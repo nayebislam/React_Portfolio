@@ -7,8 +7,6 @@
   --font-secondary: "Merriweather", serif;
   --font-button: "Nunito", sans-serif;
 
-
-
   --color-dark: #111111; 
 }
 
@@ -21,6 +19,7 @@
     --btn-text-color: white;
     --bg-color: #111111;
     --btn-color: #111111;
+    --about-icon: #27292d;
 }
 
 .light-theme {
@@ -34,6 +33,7 @@
     --h1-color: #4c4f65;
     --border-color: #1788ae;
     --btn-color: #ffffff;
+    --about-icon: #b0b2c3;
 }
 
 section, footer ,.aboutPart {
