@@ -19,7 +19,7 @@ const LatestWork = () => {
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-0">
           <a href="https://innovatee.vercel.app" className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#373AA0] absolute top-1/2"></a>
           <a href="https://innovatee.vercel.app" className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#373AA0] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"></a>
-          <div className="w-full justify-center sm:justify-start flex mt-2.5">
+          <div data-aos="fade-right" className="w-full justify-center sm:justify-start flex mt-2.5">
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
               <a href="https://innovatee.vercel.app" className="">
                 <img
@@ -36,7 +36,7 @@ const LatestWork = () => {
               </a>
             </span>
           </div>
-          <div className="w-full">
+          <div data-aos="fade-left" className="w-full">
             <h3 className="font-button font-bold text-2xl md:text-4xl text-[#373AA0] mt-4 mb-1 md:mt-8 md:mb-[7px]">
               Innovate
             </h3>
@@ -78,7 +78,7 @@ const LatestWork = () => {
         <div className="flex flex-col sm:flex-row-reverse gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
           <a href="https://nayebislam.github.io/Cleaning/" className="hidden sm:block h-[1px] right-1/4 left-1/2 bg-[#2B8761] absolute top-1/2"/>
           <a href="https://nayebislam.github.io/Cleaning/" className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2B8761] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
-          <div className="w-full justify-center sm:justify-end flex mt-2.5">
+          <div data-aos="fade-left" className="w-full justify-center sm:justify-end flex mt-2.5">
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
               <a href="https://nayebislam.github.io/Cleaning/" className="">
                 <img
@@ -95,7 +95,7 @@ const LatestWork = () => {
               </a>
             </span>
           </div>
-          <div className="w-full">
+          <div data-aos="fade-right" className="w-full">
             <h3 className="font-button font-bold text-2xl md:text-4xl text-[#2B8761] mt-8 mb-[7px]">
               Cleaning
             </h3>
