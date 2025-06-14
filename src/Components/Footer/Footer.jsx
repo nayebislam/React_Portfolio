@@ -59,12 +59,12 @@ const Footer = () => {
               </div>
             </a>
           </div>
-          <ul class="mx-auto flex items-center justify-center gap-6 text-[#b0b2c3]">
+          <ul class="mx-auto flex items-center justify-center gap-6">
             <li>
               <a href="https://www.linkedin.com/in/nayebgazi/">
                 <FaLinkedinIn
                   size={20}
-                  className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                  className="ease-in-out duration-200"
                 />
               </a>
             </li>
@@ -72,7 +72,7 @@ const Footer = () => {
               <a href="https://x.com/NayebGazi">
                 <FaTwitter
                   size={20}
-                  className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                  className="ease-in-out duration-200"
                 />
               </a>
             </li>
@@ -80,7 +80,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/nayebislamnafi/">
                 <GrInstagram
                   size={20}
-                  className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                  className="ease-in-out duration-200"
                 />
               </a>
             </li>
@@ -88,7 +88,7 @@ const Footer = () => {
               <a href="mailto:nayebgazi1@gmail.com">
                 <LuMail
                   size={20}
-                  className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                  className="ease-in-out duration-200"
                 />
               </a>
             </li>
@@ -96,7 +96,7 @@ const Footer = () => {
               <a href="https://github.com/nayebislam">
                 <SiGithub
                   size={20}
-                  className="text-[#b0b2c3] hover:text-white ease-in-out duration-200"
+                  className="ease-in-out duration-200"
                 />
               </a>
             </li>
