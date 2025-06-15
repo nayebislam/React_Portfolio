@@ -17,46 +17,48 @@ import CV from "../../assets/Resume.pdf";
 const Navbar = () => {
   AOS.init();
   const [isClose, setIsClose] = useState(false);
-  const [show, setShow] = useState(false)
-    const handleClick = () => {
-        setShow(true)
-    }
+  const [show, setShow] = useState(false);
+  const handleClick = () => {
+    setShow(true);
+  };
   const [theme, setTheme] = useState("dark-theme");
   const toggleTheme = () => {
     if (theme === "light-theme") {
-      setTheme("dark-theme")
+      setTheme("dark-theme");
     } else {
-      setTheme("light-theme")
+      setTheme("light-theme");
     }
   };
   useEffect(() => {
     document.body.className = theme;
-  }, [theme])  
+  }, [theme]);
   return (
     <section className="flex flex-col justify-between h-screen">
       <div className="z-[9]">
         <Conteiner>
           <div className="sm:flex items-center pt-4 justify-between">
             <div className="flex !justify-between items-center">
-              <svg
-                width="70"
-                height="70"
-                viewBox="0 0 406 368"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
-                  stroke-opacity="0.9"
-                  stroke-width="10"
-                  className="logo"
-                />
-                <path
-                  d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
-                  stroke-width="10"
-                  className="logo"
-                />
-              </svg>
+              <a href="#">
+                <svg
+                  width="70"
+                  height="70"
+                  viewBox="0 0 406 368"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+                    stroke-opacity="0.9"
+                    stroke-width="10"
+                    className="logo"
+                  />
+                  <path
+                    d="M314.899 203.5L314.899 349.43L162.5 209.053M314.899 203.5L283.037 203.586M314.899 203.5L337.881 203.586L381 171.109L314.899 171.109M162.5 209.053L118.044 170.96L157.5 171.109M162.5 209.053L65.5 301.465L20.5595 301.465L137.482 189.156M200.5 171.109L283.037 96.5L283.037 171.109M200.5 171.109L283.037 171.109M200.5 171.109L157.5 171.109M283.037 203.586L210.846 203.123L283.037 271.086L283.037 203.586ZM283.037 171.109L314.899 171.109M157.5 171.109L316.135 20.4322L314.899 171.109"
+                    stroke-width="10"
+                    className="logo"
+                  />
+                </svg>
+              </a>
               <FaBarsStaggered
                 onClick={() => handleClick()}
                 className="block sm:hidden text-2xl text-white cursor-pointer"
@@ -91,12 +93,15 @@ const Navbar = () => {
                   Download CV
                 </a>
               </li>
-              <FiSun onClick={() => toggleTheme()} className="w-[24px] h-[24px] cursor-pointer" />
+              <FiSun
+                onClick={() => toggleTheme()}
+                className="w-[24px] h-[24px] cursor-pointer"
+              />
               <LuMoon className="w-[24px] h-[24px] hidden cursor-pointer" />
             </ul>
           </div>
         </Conteiner>
-        {show && 
+        {show && (
           <div className="flex flex-col justify-center items-center gap-2.5">
             <div>
               <MdClose
@@ -138,7 +143,7 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-        }
+        )}
       </div>
       <div className="flex -mt-10 relative">
         <Conteiner>
@@ -201,42 +206,27 @@ const Navbar = () => {
         <ul className="ml-auto space-y-6 absolute right-7">
           <li>
             <a href="https://www.linkedin.com/in/nayebgazi/">
-              <FaLinkedinIn
-                size={35}
-                className="ease-in-out duration-200"
-              />
+              <FaLinkedinIn size={35} className="ease-in-out duration-200" />
             </a>
           </li>
           <li>
             <a href="https://x.com/NayebGazi">
-              <FaTwitter
-                size={35}
-                className="ease-in-out duration-200"
-              />
+              <FaTwitter size={35} className="ease-in-out duration-200" />
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/nayebislamnafi/">
-              <GrInstagram
-                size={35}
-                className="ease-in-out duration-200"
-              />
+              <GrInstagram size={35} className="ease-in-out duration-200" />
             </a>
           </li>
           <li>
             <a href="mailto:nayebgazi1@gmail.com">
-              <LuMail
-                size={35}
-                className="ease-in-out duration-200"
-              />
+              <LuMail size={35} className="ease-in-out duration-200" />
             </a>
           </li>
           <li>
             <a href="https://github.com/nayebislam">
-              <SiGithub
-                size={35}
-                className="ease-in-out duration-200"
-              />
+              <SiGithub size={35} className="ease-in-out duration-200" />
             </a>
           </li>
         </ul>
