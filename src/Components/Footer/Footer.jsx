@@ -62,42 +62,27 @@ const Footer = () => {
           <ul class="mx-auto flex items-center justify-center gap-6">
             <li>
               <a href="https://www.linkedin.com/in/nayebgazi/">
-                <FaLinkedinIn
-                  size={20}
-                  className="ease-in-out duration-200"
-                />
+                <FaLinkedinIn size={20} className="ease-in-out duration-200" />
               </a>
             </li>
             <li>
               <a href="https://x.com/NayebGazi">
-                <FaTwitter
-                  size={20}
-                  className="ease-in-out duration-200"
-                />
+                <FaTwitter size={20} className="ease-in-out duration-200" />
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/nayebislamnafi/">
-                <GrInstagram
-                  size={20}
-                  className="ease-in-out duration-200"
-                />
+                <GrInstagram size={20} className="ease-in-out duration-200" />
               </a>
             </li>
             <li>
               <a href="mailto:nayebgazi1@gmail.com">
-                <LuMail
-                  size={20}
-                  className="ease-in-out duration-200"
-                />
+                <LuMail size={20} className="ease-in-out duration-200" />
               </a>
             </li>
             <li>
               <a href="https://github.com/nayebislam">
-                <SiGithub
-                  size={20}
-                  className="ease-in-out duration-200"
-                />
+                <SiGithub size={20} className="ease-in-out duration-200" />
               </a>
             </li>
           </ul>

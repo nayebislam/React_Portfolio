@@ -17,9 +17,19 @@ const LatestWork = () => {
           </h2>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-0">
-          <a data-aos="fade-right" href="https://innovatee.vercel.app" className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#373AA0] absolute top-1/2"></a>
-          <a href="https://innovatee.vercel.app" className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#373AA0] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"></a>
-          <div data-aos="fade-right" className="w-full justify-center sm:justify-start flex mt-2.5">
+          <a
+            data-aos="fade-right"
+            href="https://innovatee.vercel.app"
+            className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#373AA0] absolute top-1/2"
+          ></a>
+          <a
+            href="https://innovatee.vercel.app"
+            className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#373AA0] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"
+          ></a>
+          <div
+            data-aos="fade-right"
+            className="w-full justify-center sm:justify-start flex mt-2.5"
+          >
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
               <a href="https://innovatee.vercel.app" className="">
                 <img
@@ -76,9 +86,19 @@ const LatestWork = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row-reverse gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
-          <a data-aos="fade-left" href="https://nayebislam.github.io/Cleaning/" className="hidden sm:block h-[1px] right-1/4 left-1/2 bg-[#2B8761] absolute top-1/2"/>
-          <a href="https://nayebislam.github.io/Cleaning/" className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2B8761] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
-          <div data-aos="fade-left" className="w-full justify-center sm:justify-end flex mt-2.5">
+          <a
+            data-aos="fade-left"
+            href="https://nayebislam.github.io/Cleaning/"
+            className="hidden sm:block h-[1px] right-1/4 left-1/2 bg-[#2B8761] absolute top-1/2"
+          />
+          <a
+            href="https://nayebislam.github.io/Cleaning/"
+            className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2B8761] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"
+          />
+          <div
+            data-aos="fade-left"
+            className="w-full justify-center sm:justify-end flex mt-2.5"
+          >
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
               <a href="https://nayebislam.github.io/Cleaning/" className="">
                 <img
@@ -132,9 +152,19 @@ const LatestWork = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
-          <a data-aos="fade-right" href="https://nayebislam.github.io/Agenc/" className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#6A4DF4] absolute top-1/2"/>
-          <a href="https://nayebislam.github.io/Agenc/" className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#6A4DF4] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
-          <div data-aos="fade-right" className="w-full justify-center sm:justify-start flex mt-2.5">
+          <a
+            data-aos="fade-right"
+            href="https://nayebislam.github.io/Agenc/"
+            className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#6A4DF4] absolute top-1/2"
+          />
+          <a
+            href="https://nayebislam.github.io/Agenc/"
+            className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#6A4DF4] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"
+          />
+          <div
+            data-aos="fade-right"
+            className="w-full justify-center sm:justify-start flex mt-2.5"
+          >
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
               <a href="https://nayebislam.github.io/Agenc/" className="">
                 <img
@@ -188,11 +218,24 @@ const LatestWork = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row-reverse gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
-          <a data-aos="fade-left" href="https://nayebislam.github.io/BMI-Calculator/" className="hidden sm:block h-[1px] right-[27%] left-1/2 bg-[#2c3e50] absolute top-1/2"/>
-          <a href="https://nayebislam.github.io/BMI-Calculator/" className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2c3e50] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
-          <div data-aos="fade-left" className="w-full justify-center sm:justify-end flex mt-2.5">
+          <a
+            data-aos="fade-left"
+            href="https://nayebislam.github.io/BMI-Calculator/"
+            className="hidden sm:block h-[1px] right-[27%] left-1/2 bg-[#2c3e50] absolute top-1/2"
+          />
+          <a
+            href="https://nayebislam.github.io/BMI-Calculator/"
+            className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#2c3e50] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"
+          />
+          <div
+            data-aos="fade-left"
+            className="w-full justify-center sm:justify-end flex mt-2.5"
+          >
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
-              <a href="https://nayebislam.github.io/BMI-Calculator/" className="">
+              <a
+                href="https://nayebislam.github.io/BMI-Calculator/"
+                className=""
+              >
                 <img
                   className="drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
                   src={BMI_Calculator}
@@ -244,11 +287,24 @@ const LatestWork = () => {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-[80px] items-center relative mt-11 sm:mt-[58px]">
-          <a data-aos="fade-right" href="https://nayebislam.github.io/Digital-Clock/" className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#f41b75] absolute top-1/2"/>
-          <a href="https://nayebislam.github.io/Digital-Clock/" className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#f41b75] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"/>
-          <div data-aos="fade-right" className="w-full justify-center sm:justify-start flex mt-2.5">
+          <a
+            data-aos="fade-right"
+            href="https://nayebislam.github.io/Digital-Clock/"
+            className="hidden sm:block h-[1px] left-1/4 right-1/2 bg-[#f41b75] absolute top-1/2"
+          />
+          <a
+            href="https://nayebislam.github.io/Digital-Clock/"
+            className="circle hidden sm:block h-4 w-4 rounded-full border-[3px] border-[#f41b75] absolute left-1/2 -translate-x-1/2 z-10 cursor-pointer hover:scale-115 ease-in-out duration-100"
+          />
+          <div
+            data-aos="fade-right"
+            className="w-full justify-center sm:justify-start flex mt-2.5"
+          >
             <span className="relative group sm:hover:scale-105 ease-in-out duration-200">
-              <a href="https://nayebislam.github.io/Digital-Clock/" className="">
+              <a
+                href="https://nayebislam.github.io/Digital-Clock/"
+                className=""
+              >
                 <img
                   className="drop-shadow-[0_0px_60px_rgba(59,130,246,0.6)]"
                   src={Digital_Clock}

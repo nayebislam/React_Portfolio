@@ -53,9 +53,9 @@ const AboutMe = ({ isClose, setIsClose }) => {
               <p className="lg:max-w-[390px] font-button text-justify text-white mt-5">
                 I’m Nayeb Gazi and I am self taught front-end developer from
                 Bangladesh. Programming and web development is my passion and I
-                believe in helping people with my abilities and knowledge. It feels like a
-                part of my life. Proficient in HTML5, CSS3, JavaScript, and
-                modern frameworks like React.js
+                believe in helping people with my abilities and knowledge. It
+                feels like a part of my life. Proficient in HTML5, CSS3,
+                JavaScript, and modern frameworks like React.js
               </p>
               <ul className="flex flex-wrap font-button text-white my-3.5">
                 <li className="border border-[#444] py-[5.5px] px-[10px] mb-[6.8px] mr-[6.8px] rounded-[50px] text-[13.6px]">
@@ -104,9 +104,7 @@ const AboutMe = ({ isClose, setIsClose }) => {
                     <div className='tooltip bg-[#8512FB] text-white py-2 px-5 font-semibold rounded-[50px] font-button items-center absolute top-[-16px] after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#8512FB] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                       <span className="relative z-10">Bootstrap</span>
                     </div>
-                    <RiBootstrapLine
-                      className="text-[#8512FB] z-10 text-[40px] md:text-[50px]"
-                    />
+                    <RiBootstrapLine className="text-[#8512FB] z-10 text-[40px] md:text-[50px]" />
                     <h2 className="text-[#8512FB] font-button font-bold text-2xl cursor-default">
                       B
                     </h2>
@@ -124,9 +122,7 @@ const AboutMe = ({ isClose, setIsClose }) => {
                     <div className='tooltip bg-[#61dafb] text-black py-2 px-5 font-semibold rounded-[50px] font-button items-center absolute top-[-16px] after:content[""] after:absolute after:w-[16px] after:h-[16px] after:left-1/2 after:-translate-x-1/2 after:bottom-[-8px] after:rotate-45 after:bg-[#61dafb] group-hover:top-[-55px] group-hover:opacity-100 ease-in-out duration-200 opacity-0'>
                       <span className="relative z-10">Tailwind</span>
                     </div>
-                    <TbBrandTailwind
-                      className="text-[#61dafb] z-10 text-[40px] md:text-[50px]"
-                    />
+                    <TbBrandTailwind className="text-[#61dafb] z-10 text-[40px] md:text-[50px]" />
                     <h2 className="text-[#61dafb] font-button font-bold text-2xl cursor-default">
                       T
                     </h2>
